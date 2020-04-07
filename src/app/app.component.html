@@ -1,6 +1,11 @@
+<!--to show nothing if the quiz isn’t loaded-->
 <div class="quiz" *ngIf="quiz">
-
+  <!--to only display the app-question-form component if the showResults flag is false.-->
   <div class="questions" *ngIf="!showResults">
+    <!--two different syntaxes used for the input (question) and the output (onChoiceMade). This tells Angular which way to go-->
+
+    <!--onChoiceMade is given a function, updateChoice, and a special argument, $event. This $event will be bound to the actual
+  choice made within the component and passed to the updateChoice function.-->
     <app-question-form [question]="quiz.questions[currentQuestionIndex]" (onChoiceMade)="updateChoice($event)">
     </app-question-form>
 

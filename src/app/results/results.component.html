@@ -1,0 +1,19 @@
+<mdb-card class="results" style="width: 24rem;">
+    <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+        <mdb-card-body class="results-body">
+            <mdb-card-title class="results-title">
+                <h1>Results</h1>
+            </mdb-card-title>
+
+            <!-- ngClass directive is used to set a correct class to an answer if its model is correct -->
+            <div class="answer" *ngFor="let a of answers.values" [ngClass]="{correct: a.correct}">
+                {{a.value}}
+                <span>- {{a.correct}}</span>
+            </div>
+            <div class="result-button">
+                <button mdbBtn type="button" color="indigo" mdbWavesEffect routerLink="/welcome">Choose another
+                    quiz</button>
+            </div>
+        </mdb-card-body>
+    </div>
+</mdb-card>

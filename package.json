@@ -9,9 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  {
-  "homepage": "https://bowlofsunshine.github.io/my-awesome-quiz-app"
-   },
+  "homepage": "https://bowlofsunshine.github.io/my-awesome-quiz-app",
   "private": true,
   "dependencies": {
     "@angular/animations": "^9.1.1",
